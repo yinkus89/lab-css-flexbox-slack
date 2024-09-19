@@ -8,3 +8,79 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .company-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .company-logos {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .teams-rely {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .footer {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .menu-icon {
+      display: none;
+    }
+  
+    .digital-hq-buttons {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  
+  
+  @media (min-width: 1440px) {
+    .header-buttons {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .header-image {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
